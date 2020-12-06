@@ -12,7 +12,7 @@ Currently deployed over Amazon serverless using Lambda over free tier plan.
 Usage: 
 
 --------------------------------------------------------
-Send as request as below from either a website or Postman: 
+Send as request as below from either a website or Postman:  
 Request body: 
   
 {  
