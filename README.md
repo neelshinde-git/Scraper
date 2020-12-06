@@ -10,12 +10,14 @@ Dependencies:
 Currently deployed over Amazon serverless using Lambda over free tier plan. 
 
 Usage: 
+
 --------------------------------------------------------
 Send as request as below from either a website or Postman: 
 Request body: 
 {
     "url":"https://www.flipkart.com/"
 }
+
 --------------------------------------------------------
 Response received: 
 {
@@ -28,7 +30,7 @@ Response received:
 }
 
 Inner functioning: 
-Checks if url is cached. 
-If yes, sends the data retrieved from Dynamodb
-If not cached scrapes data using the standard technique mentioned above and sends the data in response. 
-Caches the new url along with acquired data to Dynamodb for further use. 
+- Checks if url is cached. 
+- If yes, sends the data retrieved from Dynamodb
+- If not cached scrapes data using the standard technique mentioned above and sends the data in response. 
+- Caches the new url along with acquired data to Dynamodb for further use. 
