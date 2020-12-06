@@ -34,7 +34,7 @@ Response received:
 --------------------------------------------------------
 
 Inner functioning: 
-- Checks if url is cached. 
+- Checks if url is cached by querying url in Dynamodb. 
 - If yes, sends the data retrieved from Dynamodb
 - If not cached scrapes data using the standard technique mentioned above and sends the data in response. 
 - Caches the new url along with acquired data to Dynamodb for further use. 
